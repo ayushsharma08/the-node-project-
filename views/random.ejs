@@ -1,0 +1,14 @@
+<%- include('partials/head') %> 
+
+
+
+<%- include('partials/navbar') %> 
+
+    <h1>Your random number is : <%= bubbles%>;</h1>
+    <%if(bubbles%2==0){ %>
+    <h1>The number is even :<%=bubbles%></h1>
+    <%}else{%>
+    <h1>The number is odd : <%=bubbles%></h1>
+    <%}%>
+    <h3><%= bubbles%2==0 ? 'EVEN':'ODD'%></h3>
+    <%- include('partials/footer') %>
